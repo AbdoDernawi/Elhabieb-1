@@ -3,6 +3,7 @@ const dotenv = require("dotenv");
 const connectDB = require("./config/db");
 const cors = require("cors");
 const PORT = 5000 || process.env.PORT;
+const bodyParser = require("body-parser");
 
 dotenv.config();
 connectDB();
