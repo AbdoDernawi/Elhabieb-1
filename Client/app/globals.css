@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --mainColor: #e3d5c4ad;
+  --content: #e3d5c455;
+  --Bg: #e2d5c568;
+  --IconArrow: #e2d5c5fb;
+  --Border: #151b1f17;
+  --ColorText: #151b1fed;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.input {
+  display: block;
+  text-align: center !important;
+  width: 100%;
+  height: 60px;
+  border: 0.2px solid var(--mainColor);
+  transition: border 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+  outline: none;
+  border-radius: 12px;
+}
+.input::-webkit-inner-spin-button,
+.input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.input[type="number"] {
+  -moz-appearance: textfield;
+}
+.input::placeholder {
+  font-size: 16px !important;
+}
+.input:focus {
+  border: 1px solid var(--mainColor) !important;
+  background-color: var(--mainColorRgba) !important;
+}
+
+@keyframes slideInOut {
+  0%,
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  10%,
+  90% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes colorChange {
+  0%,
+  100% {
+    color: #f4e8c1;
+  }
+  25% {
+    color: #a0c1b9;
+  }
+  50% {
+    color: #70a0af;
+  }
+  75% {
+    color: #706993;
+  }
+}
+
+.animate-slide-color {
+  animation: slideInOut 8s ease-in-out infinite, colorChange 8s linear infinite;
+}
+
