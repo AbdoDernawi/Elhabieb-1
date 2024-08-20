@@ -19,8 +19,8 @@ app.use(bodyParser.urlencoded({ extended: true, limit: "10mb" }));
 const categoryRoutes = require("./routes/categorey");
 const productsRoutes = require("./routes/products");
 
-app.use("/api/category", categoryRoutes);
-app.use("/api/products", productsRoutes);
+app.use("/category", categoryRoutes);
+app.use("/products", productsRoutes);
 app.get("/", function (req, res) {
     res.send("-ˏˋ⋆ ᴡ ᴇ ʟ ᴄ ᴏ ᴍ ᴇ ⋆ˊˎ-");
 });
