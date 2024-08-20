@@ -1,14 +1,14 @@
 const express = require("express");
+const bodyParser = require("body-parser");
+const cors = require("cors");
 const dotenv = require("dotenv");
 const connectDB = require("./config/db");
-const cors = require("cors");
 const PORT = 5000 || process.env.PORT;
-const bodyParser = require("body-parser");
+const app = express();
 
 dotenv.config();
 connectDB();
 
-const app = express();
 
 app.use(cors());
 app.use(express.json({ limit: "10mb" }));
