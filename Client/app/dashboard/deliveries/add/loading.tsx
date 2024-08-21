@@ -6,7 +6,7 @@ import NavBar from "@/Components/Dashboard/NavBar";
 import SideBar from "@/Components/Dashboard/SideBar";
 import SizeScreen from "@/Components/Dashboard/SizeScreen";
 
-export default function Loading() {
+export default function AddDelivery() {
   return (
     <>
       <div className="bg-zinc-200 lg:h-auto w-[100%] min-h-screen flex max-2xl:flex max-xl:flex lg:flex md:hidden sm:hidden max-sm:hidden">

@@ -32,7 +32,7 @@ export const fetchCategories = createAsyncThunk(
   "categories/fetchCategories",
   async () => {
     try {
-      const response = await axios.get(`${apiEndpoint}api/category`);
+      const response = await axios.get(`${apiEndpoint}category`);
       const encryptedData = response.data.data;
 
       if (!keyHash) {
@@ -53,7 +53,7 @@ export const fetchCategoryById = createAsyncThunk(
   "category/fetchCategoryById",
   async (slug: string) => {
     try {
-      const response = await axios.get(`${apiEndpoint}api/category/${slug}`);
+      const response = await axios.get(`${apiEndpoint}category/${slug}`);
       const encryptedData = response.data.data;
 
       if (!keyHash) {

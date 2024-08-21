@@ -72,7 +72,7 @@ export const fetchProducts = createAsyncThunk(
   "products/fetchProducts",
   async () => {
     try {
-      const response = await axios.get(`${apiEndpoint}api/products`);
+      const response = await axios.get(`${apiEndpoint}products`);
       const encryptedData = response.data.data;
       if (!keyHash) {
         throw new Error("Encryption key is missing");
@@ -90,7 +90,7 @@ export const fetchProductById = createAsyncThunk(
   "product/fetchProductById",
   async (slug: string) => {
     try {
-      const response = await axios.get(`${apiEndpoint}api/products/${slug}`);
+      const response = await axios.get(`${apiEndpoint}products/${slug}`);
       const encryptedData = response.data.data;
 
       if (!keyHash) {

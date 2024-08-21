@@ -112,7 +112,7 @@ export default function EditCategory() {
 
     try {
       const response = await axios.post(
-        `${apiEndpoint}api/category/edit/${slug}`,
+        `${apiEndpoint}category/edit/${slug}`,
         { data: encryptedData }
       );
 

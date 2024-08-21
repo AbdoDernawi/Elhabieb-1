@@ -1,12 +1,12 @@
 "use client";
 
+import AddPerson from "@/Components/Dashboard/AddPerson";
 // Components
 import NavBar from "@/Components/Dashboard/NavBar";
 import SideBar from "@/Components/Dashboard/SideBar";
 import SizeScreen from "@/Components/Dashboard/SizeScreen";
-import AddPerson from "@/Components/Dashboard/AddPerson";
 
-export default function Loading() {
+export default function AddMarketer() {
   return (
     <>
       <div className="bg-zinc-200 lg:h-auto w-[100%] min-h-screen flex max-2xl:flex max-xl:flex lg:flex md:hidden sm:hidden max-sm:hidden">

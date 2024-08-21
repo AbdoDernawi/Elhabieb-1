@@ -103,7 +103,7 @@ export default function AddCategory() {
     try {
       setLoading(true);
       const response = await axios.post(
-        `${apiEndpoint}api/category/addcategory`,
+        `${apiEndpoint}category/addcategory`,
         { data: encryptedData }
       );
 

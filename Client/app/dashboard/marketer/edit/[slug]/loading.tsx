@@ -11,7 +11,7 @@ import PageAnalysis from "@/Components/Dashboard/PagesDashboard/PageAnalysis";
 import AddPerson from "@/Components/Dashboard/AddPerson";
 import EditPerson from "@/Components/Dashboard/EditPerson";
 
-export default function Loading({ params }: { params: { slug: string } }) {
+export default function EditMarketer({ params }: { params: { slug: string } }) {
   return (
     <>
       <div className="bg-zinc-200 lg:h-auto w-[100%] min-h-screen flex max-2xl:flex max-xl:flex lg:flex md:hidden sm:hidden max-sm:hidden">

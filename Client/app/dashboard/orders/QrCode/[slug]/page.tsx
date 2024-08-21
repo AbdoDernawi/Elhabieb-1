@@ -65,9 +65,9 @@ export default function QrCode({ params }: { params: { slug: string } }) {
   };
   const Body = () => {
     return (
-      <div className="p-10 w-[100%] h-screen bg-[var(--mainColor)] mt-1 flex flex-col justify-center items-center">
+      <div className="w-[100%] h-screen bg-[var(--content)] mt-1 mb-0.5 p-4 flex flex-col justify-center items-center">
         <Barcode
-          background="#ECE2D7"
+          background="#F6F1EB"
           value={"66a160351fa27363f7ea40fd"}
           format="CODE128"
           width={2}

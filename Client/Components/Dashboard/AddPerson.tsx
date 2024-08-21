@@ -2,12 +2,9 @@
 
 // React
 import { useState } from "react";
-import Image from "next/image";
 
 // Components
-import NavBar from "@/Components/Dashboard/NavBar";
-import SideBar from "@/Components/Dashboard/SideBar";
-import { Avatar, Button, Radio, RadioGroup, Spinner } from "@nextui-org/react";
+import { Button, Radio, RadioGroup, Spinner } from "@nextui-org/react";
 import Icons from "@/iconsSvg";
 
 // Firebase

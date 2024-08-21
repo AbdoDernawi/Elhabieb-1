@@ -94,18 +94,18 @@ export default function SideBar() {
           <span className="text-slate-400">إضافات</span>
           <div className="w-[35%] h-[1px] bg-slate-400"></div>
         </div>
-        {Item(Icons.BanknotesIcon, "طرق الدفع", "/dashboard/catiogres")}
-        {Item(Icons.BuildinglibraryIcon, "الخزينه", "/dashboard/catiogres")}
-        {Item(Icons.BanknotesIcon, "طلبات السحب", "/dashboard/catiogres")}
-        {Item(Icons.UsergroupIcon, "الموردين", "/dashboard/catiogres")}
-        {Item(Icons.ShoppingbagIcon, "المشتريات", "/dashboard/catiogres")}
-        {Item(Icons.ComputerDesktopIcon, "الكاشير", "/dashboard/catiogres")}
+        {Item(Icons.BanknotesIcon, "طرق الدفع", "/dashboard")}
+        {Item(Icons.BuildinglibraryIcon, "الخزينه", "/dashboard")}
+        {Item(Icons.BanknotesIcon, "طلبات السحب", "/dashboard")}
+        {Item(Icons.UsergroupIcon, "الموردين", "/dashboard")}
+        {Item(Icons.ShoppingbagIcon, "المشتريات", "/dashboard")}
+        {Item(Icons.ComputerDesktopIcon, "الكاشير", "/dashboard")}
         {Item(
           Icons.ArrowtrendingdownIcon,
           "سجل تحويلات الكاشير",
-          "/dashboard/catiogres"
+          "/dashboard"
         )}
-        {Item(Icons.BuildingstorefrontIcon, "المخازن", "/dashboard/catiogres")}
+        {Item(Icons.BuildingstorefrontIcon, "المخازن", "/dashboard")}
 
         <div className="p-4 pl-5 m-1 cursor-pointer text-slate-700 text-sm flex items-center hover:text-red-500 opacity-[0.7] rounded-2xl hover:font-bold ">
           {Icons.ArrowUturnDownIcon}

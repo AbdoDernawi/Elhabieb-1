@@ -70,7 +70,7 @@ export default function QrCode({ params }: { params: { slug: string } }) {
           <div className="my-4">
             <div className="w-[100%] mt-10 p-4 text-sm flex justify-evenly items-center">
               <Barcode
-                background="#E4E4E7"
+                background="#F6F1EB"
                 value={"66a160351fa27363f7ea40fd"}
                 format="CODE128"
                 width={2}

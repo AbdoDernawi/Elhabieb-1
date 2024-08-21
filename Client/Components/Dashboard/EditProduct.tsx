@@ -276,7 +276,7 @@ export default function EditProduct() {
       const encryptedFormData = encryptData(DataSendedReady);
 
       const response = await axios.post(
-        `${apiEndpoint}api/products/editProduct/${slug}`,
+        `${apiEndpoint}products/editProduct/${slug}`,
         { data: encryptedFormData }
       );
 

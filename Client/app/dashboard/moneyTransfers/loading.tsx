@@ -6,18 +6,19 @@ import Image from "next/image";
 //components
 import NavBar from "@/Components/Dashboard/NavBar";
 import SideBar from "@/Components/Dashboard/SideBar";
-import PageAnalysis from "@/Components/Dashboard/PagesDashboard/PageAnalysis";
+import PageMoneyTransfers from "@/Components/Dashboard/PagesDashboard/PageMoneyTransfers";
 
 //images
 import error from "@/public/images/notfound.png";
+import WorkingOnPage from "@/Components/WorkingOnPage";
 
-const Loading = () => {
+export default function Orders() {
   return (
     <>
-      <div className="bg-zinc-200 lg:h-auto w-[100%] min-h-screen flex max-2xl:flex max-xl:flex lg:flex md:hidden sm:hidden max-sm:hidden">
+      {/* <div className="bg-zinc-200 lg:h-auto w-[100%] min-h-screen flex max-2xl:flex max-xl:flex lg:flex md:hidden sm:hidden max-sm:hidden">
         <div className="w-[80%] mr-1">
           <NavBar />
-          <PageAnalysis />
+          <PageMoneyTransfers />
         </div>
         <div className="w-[20%] bg-white">
           <SideBar />
@@ -27,9 +28,8 @@ const Loading = () => {
       <div className="flex max-2xl:hidden max-xl:hidden lg:hidden md:flex sm:flex max-sm:flex h-screen flex-col items-center justify-center">
         <Image src={error} alt={"error"} width={200} height={300} />
         <p> عفوا مقاس الشاشه الخاص بك غير مدعوم ☹ </p>
-      </div>
+      </div> */}       <WorkingOnPage /> 
+
     </>
   );
-};
-
-export default Loading;
+}
